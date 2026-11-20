@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Scientist and Engineers Guide to Digital signal processing, Second Edition (Steven W. Smith) · 交互式教材</title>
+<link rel="stylesheet" href="framework.css">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div><div class="bg-orb orb-2"></div><div class="bg-orb orb-3"></div>
+  <div class="bg-orb orb-4"></div><div class="bg-orb orb-5"></div>
+  <button id="menuBtn" onclick="document.getElementById('nav').classList.toggle('open')">☰ 目录</button>
+  <aside id="nav">
+    <div class="nav-head">
+      <h1 id="bookTitleEl">The Scientist and Engineers Guide to Digital signal processing, Second Edition (Steven W. Smith)</h1>
+      <p id="bookMetaEl">正在加载目录...</p>
+      <input id="searchBox" type="text" placeholder="🔍 搜索章节或知识点...">
+    </div>
+    <div class="nav-tree" id="navTree"></div>
+    <div class="nav-footer">
+      <button onclick="window.__STEP_SECTION__(-1)">← 上一节</button>
+      <button onclick="window.__STEP_SECTION__(1)">下一节 →</button>
+    </div>
+  </aside>
+  <main id="stage"><div id="bookContent" class="content-wrap"></div></main>
+  <script src="data/manifest.js"></script>
+  <script src="framework.js"></script>
+</body>
+</html>
